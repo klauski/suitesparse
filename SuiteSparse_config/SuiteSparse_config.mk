@@ -224,11 +224,9 @@ SUITESPARSE_VERSION = 4.5.1
         CUDA_INC      = -I$(CUDA_INC_PATH)
         NVCC          = $(CUDA_PATH)/bin/nvcc
         NVCCFLAGS     = -Xcompiler -fPIC -O3 \
-                            -gencode=arch=compute_20,code=sm_20 \
-                            -gencode=arch=compute_30,code=sm_30 \
-                            -gencode=arch=compute_35,code=sm_35 \
-                            -gencode=arch=compute_50,code=sm_50 \
-                            -gencode=arch=compute_50,code=compute_50
+                            -gencode=arch=compute_61,code=sm_61 \
+                            -gencode=arch=compute_62,code=sm_62 \
+                            -gencode=arch=compute_75,code=sm_75 
     endif
 
     #---------------------------------------------------------------------------
